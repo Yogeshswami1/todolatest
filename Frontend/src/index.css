@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CARD */
+.app {
+  background: #ffffff;
+  width: 420px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* INPUT */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-box input:focus {
+  border-color: #667eea;
+}
+
+.input-box button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  background: #5a67d8;
+}
+
+/* TODO LIST */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f8f9ff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* TODO TEXT */
+li span {
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+}
+
+/* COMPLETED */
+li span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* DELETE BUTTON */
+li button {
+  background: #ff4d4d;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li button:hover {
+  background: #e63939;
+}
