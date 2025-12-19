@@ -14,6 +14,6 @@ services:
       - "5000:5000"
     restart: always
     env_file:
-      - ./server/.env
+      - ./Server/.env
     depends_on:
       - frontend
