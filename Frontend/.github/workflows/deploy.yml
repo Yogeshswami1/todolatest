@@ -21,7 +21,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2KEY }}
           script: |
-            cd /var/www/html/Books
+            cd /var/www/html/todo
             git pull origin main
             docker compose down
             docker compose up -d --build
