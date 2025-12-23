@@ -12,8 +12,8 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://todo.yogeshtech.xyz",
-      "https://todo.yogeshtech.xyz",
+      "http://todoo.yogeshtech.xyz",
+      "https://todoobackend.yogeshtech.xyz",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
